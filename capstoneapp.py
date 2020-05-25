@@ -17,7 +17,7 @@ while True:
 		time = input("Departure time: ")
 		seats = int(input("Seats available:"))
 
-		ledger[bus_number] = Driver
+		ledger[destination] = [bus_number, driver_name]
 
 	if choice == 2:
 		employee_name = input("Name: ")
@@ -25,8 +25,15 @@ while True:
 		employee_department = input("Department: ")
 		department_id = input("Depatment id: ")
 		where_to = input("Destination: ")
-		seats_booked = int(input("Number of seats to be booked: "))
 
+	print("View buses in my route: ")
+	print ("{:<10} {:<10} {:<10}".format('DESTINATION', 'BUS NO.', 'DRIVER')) 
+  
+# print each data item. 
+	for key, value in ledger.items(): 
+    	destination, bus_number, driver_name = value 
+   		print ("{:<10} {:<10} {:<10}".format(destination, bus_number, driver_name))	
+		
 			
 
 		
