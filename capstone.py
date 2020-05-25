@@ -8,17 +8,39 @@ class Driver:
 		self.seats = seats
 
 	def update(self, seats_booked):
-			seats = seats - seats_booked
+			seats = seats - booked
 
 	#def booked(self, ):
 				
 
 class Employee:
-	def __init__(self, employee_name, employee_phone, employee_department, department_id, where_to, seats_booked):
+	def __init__(self, employee_name, employee_phone, employee_department, department_id, where_to):
 		self.employee_name = employee_name
 		self.employee_phone = employee_phone
 		self.employee_department = employee_department
 		self.department_id = department_id
-		self.where_to = where_to		
-		self.seats_booked = seats_booked
+		self.where_to = where_to
+			
+
+	def booking(self, booked):
+		self.booked = int(input("Enter the number of seats you want to book: "))
+
+	def confirmation(self):
+		print("*"*30)
+		print("Your ride has been booked")	
+		print("_"*30)
+		print("Driver name: ",)
+		print("Bus number: ",)
+		print("Destination: ",)
+		print("Total seats booked: ",)
+		print("Driver phone number: ",)
+		print("_"*30)
+		print("\nYour information:-",)
+		print("Name: ")
+		print("Phone number: ")
+		print("Department: ",)
+		print("ID: ",)
+
+
+
 
