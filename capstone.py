@@ -1,3 +1,4 @@
+from tabulate import tabulate
 class Driver:
 	def __init__(self, driver_name, driver_phone, bus_number, destination, time, seats):
 		self.driver_name = driver_name
@@ -7,10 +8,10 @@ class Driver:
 		self.time = time
 		self.seats = seats
 
-	def update(self, seats_booked):
-			seats = seats - booked
+	def update(self, seats, seats_booked):
+			self.seats = seats - seats_booked
 
-	#def booked(self, ):
+	list1 = []
 				
 
 class Employee:
@@ -22,24 +23,7 @@ class Employee:
 		self.where_to = where_to
 			
 
-	def booking(self, booked):
-		self.booked = int(input("Enter the number of seats you want to book: "))
-
-	def confirmation(self):
-		print("*"*30)
-		print("Your ride has been booked")	
-		print("_"*30)
-		print("Driver name: ",)
-		print("Bus number: ",)
-		print("Destination: ",)
-		print("Total seats booked: ",)
-		print("Driver phone number: ",)
-		print("_"*30)
-		print("\nYour information:-",)
-		print("Name: ")
-		print("Phone number: ")
-		print("Department: ",)
-		print("ID: ",)
+	list2 = []
 
 
 
