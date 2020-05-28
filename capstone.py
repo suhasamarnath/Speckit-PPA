@@ -12,6 +12,12 @@ class Driver:
 			self.seats = seats - seats_booked
 
 	list1 = []
+
+	dest_list = []
+
+	def delete_object(self, obj):
+		self.obj = obj
+		del self.obj
 				
 
 class Employee:
